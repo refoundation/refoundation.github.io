@@ -45,12 +45,12 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 h3 {
   font-family: sans-serif;
   text-align: center;
-  font-size: 4vw;
+  font-size: 4.5vw;
   margin: 0;
 }
 h4 {
@@ -95,21 +95,21 @@ ul {
     font-family: sans-serif;
     text-align:left;
     list-style-type: square;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 ol {
     font-family: sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
 }
   
 form {
     font-family: sans-serif;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 input {
-    font-size: 5vw;
+    font-size: 3vw;
     width: 100%;
 }
 
