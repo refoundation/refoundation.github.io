@@ -6,7 +6,7 @@ html {
   font-family: "Lucida Calligraphy";
   src: url("stylesheets/fonts/Lucida-Calligraphy.ttf");
 }
-  
+
 body {
   background: linear-gradient(0deg, black, red);
   width: 90vw;
@@ -82,7 +82,7 @@ img {
     float: right;
 }
 
-figcaption { 
+figcaption {
     display: block;
     font-family: sans-serif;
     font-size: 2vw;
@@ -102,7 +102,11 @@ ol {
     font-family: sans-serif;
     font-size: 3vw;
 }
-  
+
+li {
+    padding-bottom: 1em;
+}
+
 form {
     font-family: sans-serif;
     font-size: 3vw;
