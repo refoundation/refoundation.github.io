@@ -91,6 +91,7 @@ img {
 .dems {
   width: 30%;
   float: right;
+  padding-left: 2vw;
 }
 
 figcaption {
