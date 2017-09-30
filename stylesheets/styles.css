@@ -5,23 +5,22 @@ html {
     padding: 0;
 }
 
-@media (max-width: 500px) {
-    html {
-        width: auto;
-        font-size: 4vw;
-    }
+.mobile-hide {
+    display: inline-block;
 }
 
-@font-face {
-    font-family: "Lucida Calligraphy";
-    src: url("stylesheets/fonts/Lucida-Calligraphy.ttf");
+.mobile-show {
+    display: none;
 }
+
 
 body {
-    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 0;
     margin: 0;
-    font-family: "Lucida Calligraphy", serif;
+    font-family: serif;
 }
 
 #introduction {
@@ -30,7 +29,9 @@ body {
     color: yellow;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 95vh;
+    width: 100vw;
+    margin-bottom: 5vh;
     align-items: center;
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 #introduction > figure {
-    flex: 0 1;
+    flex: 1 0;
     margin: 0;
 }
 
@@ -54,6 +55,13 @@ body {
 #introduction > div > nav > a {
     color: yellow;
     padding: 0.5vw;
+}
+
+#points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
 }
 
 .menu {
@@ -71,7 +79,7 @@ body {
     z-index: 2;
 }
 
-.menu > a {
+.menu a {
     float: left;
     color: red;
     padding: 0.5vw;
@@ -187,4 +195,30 @@ a:active {
     color: blue;
     background-color: transparent;
     text-decoration: underline
+}
+
+@media only screen
+and (max-device-width: 500px) {
+    html {
+        width: auto;
+        font-size: 4vw;
+    }
+
+    .menu a {
+        padding: 2vw;
+        font-size: 8vw;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .mobile-show {
+        display: block;
+        margin-left: auto;
+    }
+
+    img {
+        width: unset;
+    }
 }
