@@ -1,0 +1,21 @@
+{
+  "name": "refoundation.github.io",
+  "homepage": "https://github.com/refoundation/refoundation.github.io",
+  "authors": [
+    "Edward Paget <edward@cassetteta.pe>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.2.0"
+  }
+}
