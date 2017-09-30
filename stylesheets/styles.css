@@ -1,6 +1,8 @@
 html {
   width: auto;
   font-size: 2vw;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 500px) {
@@ -17,22 +19,50 @@ html {
 
 body {
   background: linear-gradient(0deg, black, red);
-  width: 90vw;
   text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 !important;
+  padding: 0;
+  margin: 0;
   color: yellow;
   font-family: "Lucida Calligraphy", serif;
 }
 
+#introduction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+}
+
+#introduction > div {
+    flex: 1 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#introduction > figure {
+    flex: 0 1;
+    margin: 0;
+}
+
+#introduction > div > nav {
+    padding: 1vw;
+}
+
+#introduction > div > nav > a {
+    color: yellow;
+    padding: 0.5vw;
+}
+
 .menu {
-  display: inline-block;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  position: fixed;
-  text-align: center;
-  overflow: hidden;
+    display: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
   top: 0px;
   left: 0px;
   margin-left: -5vw;
@@ -48,7 +78,6 @@ body {
 
 h1 {
   text-align: center;
-  text-decoration: underline;
   font-size: 3em;
   margin: 0;
 }
@@ -136,20 +165,17 @@ input[type=button], input[type=submit] {
 }
 
 a:link {
-  color: blue;
   background-color: transparent;
   text-decoration: none
 }
 
 a:visited {
-  color: blue;
   background-color: transparent;
   text-decoration: none
 }
 
 a:hover {
-  color: blue;
-  background-color: yellow;
+  background-color: rgba(0,0,0,0.1);
   text-decoration: underline
 }
 
