@@ -177,6 +177,18 @@ input[type=button], input[type=submit] {
     cursor: pointer;
 }
 
+footer {
+    background-color: black;
+    display: flex;
+    color: #DB0A5B;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 95vh;
+    width: 100vw;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+
 a:link {
     background-color: transparent;
     text-decoration: none
