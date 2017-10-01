@@ -178,14 +178,9 @@ input[type=button], input[type=submit] {
 }
 
 footer {
-    background-color: black;
     display: flex;
-    color: #DB0A5B;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 95vh;
-    width: 100vw;
-    margin-bottom: 5vh;
+    background-color: black;
+    color: yellow;
     align-items: center;
 }
 
