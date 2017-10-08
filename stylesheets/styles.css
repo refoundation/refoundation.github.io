@@ -3,6 +3,7 @@ html {
     font-size: 2vw;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .mobile-hide {
@@ -20,12 +21,16 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
 
 section {
     width: 100%;
-    margin-bottom: 8vh;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+    padding: 0 10vw;
 }
 
 #introduction {
@@ -34,7 +39,7 @@ section {
     color: yellow;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 35vh;
+    height: 45vh;
     align-items: center;
     margin-bottom: 0;
 }
@@ -65,21 +70,17 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10vw;
 }
 
 #about > div {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #about > div > .map {
     flex: 1 0 50%;
-}
-
-#about > div > p {
-    flex: 1 0 50%;
-    padding: 0 5vw;
+    margin-right: 5vw;
 }
 
 .menu {
@@ -97,12 +98,26 @@ section {
     z-index: 2;
 }
 
+.menu span {
+    padding: 0.5vw 1vw;
+    color: white;
+}
+
 .menu a {
     float: left;
-    color: red;
-    padding: 0.5vw;
+    padding: 0.5vw 1vw;
     text-align: center;
     text-decoration: none;
+    color: white;
+}
+
+.menu a#brand {
+    color: red;
+    margin-right: 1vw;
+}
+
+.menu a.active {
+    color: red;
 }
 
 h1 {
@@ -172,9 +187,10 @@ figure {
     margin: 0;
 }
 
-#art {
+.art {
     display: flex;
     flex-direction: row;
+    padding: 0;
 }
 
 .captioned > span.active {
@@ -219,6 +235,7 @@ input {
     width: 100%;
     font-size: 1em;
     margin-bottom: 0.5em;
+    box-sizing: border-box;
 }
 
 input:focus {
@@ -231,12 +248,40 @@ input[type=button], input[type=submit] {
     cursor: pointer;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 2vh 0;
+    text-align: center;
+}
+
 footer > .twitter {
     margin-right: 0.2em;
+    color: white;
+}
+
+footer > .facebook {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    color: white;
+}
+
+footer > .medium {
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    color: white;
 }
 
 footer > .email {
     margin-left: 0.2em;
+    color: white;
+}
+
+#join {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 a:link {
@@ -265,13 +310,17 @@ and (max-device-width: 500px) {
         font-size: 4vw;
     }
 
-    #art {
+    .art {
         flex-direction: column;
     }
 
     .menu a {
         padding: 2vw;
         font-size: 8vw;
+    }
+
+    #about > div {
+        flex-direction: column-reverse;
     }
 
     .mobile-hide {
