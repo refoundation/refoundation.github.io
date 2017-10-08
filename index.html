@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>DSA Refoundation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="stylesheets/styles.css" />
   <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
   <script src="bower_components/aos/dist/aos.js"></script>
-  <script src="js/figures.js"></script>
+  <script src="js/figure.js"></script>
 
 </head>
 
 <body>
-  <nav class="menu" id="menu" data-aos="fade-down" data-aos-anchor="#points" data-aos-anchor-placement="top-center">
+  <nav class="menu" id="menu" data-aos="fade-down" data-aos-anchor="#about" data-aos-anchor-placement="top-center">
     <a href="#introduction">&#9773; Refoundation</a>
     <div class="mobile-hide">
       <a href="#pou">Points of Unity</a>
@@ -26,17 +27,37 @@
     <div>
       <h1>&#9773; Refoundation</h1>
       <h3>The Radical Left Caucus of DSA</h3>
-      <nav>
+      <nav class="mobile-hide">
+        <a href="#about">About</a>
         <a href="#pou">Points of Unity</a>
         <a href="#positions">Position Papers</a>
         <a href="#join">Join Us</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
-    <figure>
+  </section>
+
+  <section id="art" >
+    <figure class="captioned">
       <img src="https://www.fridakahlo.org/images/paintings/marxism-will-give-health-to-the-sick.jpg" alt="fridakahlo1">
-      <!-- <figcaption><i>Marxism will give health to the sick</i>, Frida Kahlo (1954).</figcaption> -->
+      <figcaption><i>Marxism will give health to the sick</i>, Frida Kahlo (1954).</figcaption>
     </figure>
+    <figure class="captioned" style="flex: 1 0 66%;">
+      <img src="http://www.overheadcompartment.org/wp-content/uploads/2013/01/pan0.png" alt="panthers">
+      <figcaption>Emory Douglas (c. 1968).</figcaption>
+    </figure>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+      <h2>Who we are</h2>
+      <div>
+        <figure class="map captioned">
+            <div id="mapdiv" style="width: 100%; height: 50vh;"></div>
+            <figcaption>Locations of DSA Refoundation Members</figcaption>
+        </figure>
+        <p>Refoundation is the Radical Left caucus within the Democractic Socialists of America. We are Marxists and Revolutionary Socialists hailing from DSA chapters around the US. We believe the DSA can become a...</p>
+        </p>
+      </div>
   </section>
 
   <section id="points" data-aos="fade-up">
@@ -45,7 +66,7 @@
       of movements for justice, community mobilization, and rank-and-file labor power. As DSA members, we yearn for a future
       where all power is held by the working class with common ownership of the means of production throughout the world.
       Here are our points of unity:</h4>
-    <ol data-aos="fade-up">
+    <ol>
       <li>We are Marxists and revolutionary socialists. We believe that capitalism is an unjust, violent, irrational, and exploitative
         system which must be overturned and replaced by socialism. Though we support any reform that makes our lives more
         bearable and fulfilling, we believe that socialism can only be won by confronting and overthrowing capitalists. We
@@ -98,10 +119,8 @@
         Our duty is to oppose all US imperial interventions abroad. We believe that the phrase “workers of the world unite”
         is as relevant as it was when written 150 years ago, and is the only way toward a worthwhile future.</li>
     </ol>
-    <img class="crane" src="https://www.marxists.org/subject/art/visual_arts/satire/crane/crane5.jpg" alt="pariscommune">
 
-    <img class="hammerandsickle" src="https://68.media.tumblr.com/4bb6d598ced1e52f7df891ead53bcc74/tumblr_o0v4x2rPyR1rydgnho1_500.gif"
-      alt="hammerandsickle">
+    <img class="crane" src="https://www.marxists.org/subject/art/visual_arts/satire/crane/crane5.jpg" alt="pariscommune">
 
     <h2 id="positions">Essays and position papers</h2>
 
@@ -132,14 +151,6 @@
     <a class="twitter" href="https://twitter.com/dsarefoundation">Twitter</a>
     <span>|</span>
     <a class="email" href="mailto:DSArefoundation@gmail.com">Email</a>
-    <!-- <figure>
-      <img src="http://www.overheadcompartment.org/wp-content/uploads/2013/01/pan0.png" alt="panthers">
-      <figcaption>Emory Douglas (c. 1968).</figcaption>
-    </figure> -->
-    <div class="map">
-      <span>Where we are</span>
-      <div id="mapdiv" style="width: 1000px; height: 450px;" />
-    </div>
   </footer>
 
   <script>

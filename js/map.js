@@ -1,11 +1,12 @@
 var map = AmCharts.makeChart("mapdiv", {
     type: "map",
     theme: "light",
-    panEventsEnabled: true,
-    backgroundColor: "#535364",
+    panEventsEnabled: false,
+    backgroundColor: "#fff",
     backgroundAlpha: 1,
     zoomControl: {
-        zoomControlEnabled: true
+        zoomControlEnabled: false,
+        homeButtonEnabled: false
     },
     dataProvider: {
         map: "usaHigh",
